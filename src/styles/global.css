@@ -1,0 +1,130 @@
+html {
+    background-color: #f1f5f9;
+    color: #222f2f;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.label {
+    color: dimgray;
+}
+
+@media (max-width: 1200px) {
+    html {
+        padding: 32px 32px;
+        /* Add horizontal padding when screen width is less than 1200px */
+    }
+}
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 0 auto;
+    margin: 0 auto;
+    max-width: 120ch;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px 0;
+
+}
+
+header a {
+    text-decoration: none;
+    color: #222f2f;
+}
+
+header a h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        /* Put nav below the logo on small screens */
+        align-items: flex-start;
+        /* Align all content to the left */
+    }
+
+    nav {
+        margin-left: 0;
+        /* Remove margin to align nav to the left */
+        margin-top: 10px;
+        /* Add some top margin for spacing */
+        padding: 16px 0;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+a {
+    color: #222f2f;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: darkred;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: gainsboro;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+p {
+    line-height: 2;
+}
+
+.page h1,
+.page h2,
+.page h3 {
+    color: DarkRed;
+}
+
+p a {
+    color: darkred;
+  }

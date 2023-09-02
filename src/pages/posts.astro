@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Post from "../layouts/Post.astro";
+
+const allPosts = await Astro.glob("./posts/*.md");
+const pageTitle = "Inlägg";
+---
+
+<BaseLayout {pageTitle}>
+  <h2>{pageTitle}</h2>
+
+  <p>Lite inlägg skrivna av mig.</p>
+
+  <div class="post-container">
+    {
+      allPosts.map((post) => (
+        <Post
+          postTitle={post.frontmatter.title}
+          postDate={post.frontmatter.pubDate.slice(0, -14)}
+          postDesc={post.frontmatter.description}
+          postUrl={post.url}
+        />
+      ))
+    }
+  </div>
+</BaseLayout>

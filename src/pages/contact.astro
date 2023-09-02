@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Kontakt";
+---
+
+<BaseLayout {pageTitle}>
+  <h2>{pageTitle}</h2>
+  <p>Här är olika ställen som man kan nå mig på.</p>
+
+  <article>
+    <section>
+      <div>
+        <h3>Epost</h3>
+        <a href="mailto:martin@datanist.se">martin@datanist.se</a> (öppnas externt)
+      </div>
+    </section>
+
+    <section>
+      <h3>Mastodon</h3>
+      <span>@xamarot@social.spejset.org</span>
+      <p>
+        Mastodon är ett öppet och decentraliserat socialt nätverk som bygger på
+        öppen källkod. Instansen jag medverkar på driftas av <a
+          href="https://konstellationen.org/"
+          >Kamratdataföreningen Konstellationen.</a
+        >
+      </p>
+    </section>
+
+    <section>
+      <h3>Matrix</h3>
+      <span>@zicho:matrix.org</span>
+      <p>Om man gillar att chatta kan man nå mig på Matrix under detta namn.</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <p>
+        Olika projekt jag lattjar med kan man hitta på <a
+          
+          href="https://www.github.com/zicho"
+          target="_blank">Github</a
+        > (öppnas externt)
+      </p>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  article section {
+    margin-bottom: 32px;
+  }
+</style>

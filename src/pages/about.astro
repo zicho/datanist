@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Om mig";
+---
+
+<BaseLayout {pageTitle}>
+  <h2>{pageTitle}</h2>
+  <h3>Kortfattat</h3>
+  <p>
+    Martin heter jag och har arbetat med systemutveckling sedan 2018. Har
+    primärt jobbat med C# och JavaScript/TypeScript, både som front- och
+    backendutvecklare. Gillar att jobba med webben. Arbetar för närvarande i
+    Uppsala, men är från Örebro.
+  </p>
+
+  <p>
+    På fritiden är jag med och driver <a
+      href="https://www.facebook.com/uppsalametal/">Uppsala Metal (Facebook)</a
+    > som arrangerar spelningar på
+    <a href="https://www.khusuppsala.org" target="_blank">Kulturhuset Femman</a>
+     (öppnas externt). Är också förtjust i att spela bräd- och rollspel.
+  </p>
+  <h3>Om denna sida</h3>
+  <p>
+    Denna sida är utvecklad av mig i <a href="https://astro.build/" target="_blank"
+      >webbramverket Astro</a
+    > (extern länk). Motiveringen och implementationen kan man läsa om i <a
+      href="todo"
+    >
+      detta inlägg.
+    </a>
+  </p>
+</BaseLayout>
