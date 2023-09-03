@@ -9,8 +9,6 @@ const pageTitle = "Inlägg";
 <BaseLayout {pageTitle}>
   <h2>{pageTitle}</h2>
 
-  <p>Lite inlägg skrivna av mig.</p>
-
   <div class="post-container">
     {
       allPosts.map((post) => (
@@ -24,3 +22,9 @@ const pageTitle = "Inlägg";
     }
   </div>
 </BaseLayout>
+
+<style>
+  .post-container {
+    margin-top: 32px;
+  }
+</style>

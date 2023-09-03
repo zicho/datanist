@@ -127,4 +127,8 @@ p {
 
 p a {
     color: darkred;
-  }
+}
+
+img {
+    max-width: 100%;
+}
