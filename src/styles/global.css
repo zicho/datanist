@@ -53,6 +53,10 @@ nav {
     margin-left: auto;
 }
 
+pre {
+    padding: 8px;
+}
+
 @media screen and (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -67,15 +71,27 @@ nav {
         margin-top: 10px;
         /* Add some top margin for spacing */
         padding: 16px 0;
+        width: 100%;
+
+    }
+
+    nav ul {
+        list-style: none;
+        flex-direction: column;
+    }
+
+
+    nav ul li a {
+        display: block;
     }
 }
+
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    align-items: center;
     gap: 32px;
 }
 

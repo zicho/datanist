@@ -91,7 +91,9 @@ server {
 }
 ```
 
-**Notera att detta är OKRYPTERAD HTTP och alla kan läsa trafiken. Det är bara är en "starting point". Ska du exponera din hemsida utåt bör du använda SSL/HTTPS. En bra guide för hur du gör det i nginx och debian hittar du [här](https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/)**
+**Notera att detta är OKRYPTERAD HTTP och alla kan läsa trafiken. Det är bara är en "starting point". Ska du exponera din hemsida utåt bör du använda SSL/HTTPS.**
+
+[En bra guide för hur du använder Certbot för SSL i nginx och debian hittar du här](https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/)
 
 Jag tror att på en färsk nginx-installationen ska mappen `/var/www/html` existera och innehålla någon simpel `index.html`-fil. Notera att du inte MÅSTE ha din hemsida här. Men väljer du att ha den någon annanstans, kom ihåg att ändra din nginx-konfiguration.
 

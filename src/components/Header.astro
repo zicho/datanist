@@ -1,11 +1,10 @@
----
-
----
-
 <header>
   <div class="header-content">
     <a href="/"><h1>DATA<span style="color: DarkRed">N</span>IST</h1></a>
-    <nav>
+    <label id="menu-button" for="menu-toggle" class="menu-icon">&#9776;</label>
+    <input type="checkbox" id="menu-toggle" />
+
+    <nav class="menu">
       <ul>
         <li><a href="/">Hem</a></li>
         <li><a href="/posts">Inlägg</a></li>
@@ -15,11 +14,45 @@
       </ul>
     </nav>
   </div>
-  <hr />
 </header>
+
+<hr />
 
 <style>
   h1:hover {
     color: initial;
+  }
+
+  /* Hide the menu by default */
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #menu-button {
+    display: none;
+    cursor: pointer;
+  }
+
+  #menu-button {
+    position: absolute;
+    right: 0;
+    margin-right: 32px;
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #menu-button {
+      display: block;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    /* Show the menu when the checkbox is checked */
+    #menu-toggle:checked + .menu {
+      display: block;
+    }
   }
 </style>
